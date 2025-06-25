@@ -1,0 +1,18 @@
+{
+  "name": "hyakumonogatari-api-server",
+  "version": "1.0.0",
+  "keywords": ["API","hyakumonogatari","mongoDB","express"],
+  "author": "kz",
+  "license": "UNLICENSED",
+  "description": "API server for web_hyakumonogatari",
+  "dependencies": {
+    "express":"^5.1.0",
+    "mongoose":"^8.16.0",
+    "dotenv":"^16.5.0",
+    "cors":"^2.8.5"
+  },
+  "scripts": {
+    "start": "node serverUp.js" ,
+    "dev":"nodemon serverUp.js"
+  }
+}
