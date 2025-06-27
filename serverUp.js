@@ -77,5 +77,13 @@ const ItemExt = mongoose.model('Item', itemSchema, 'extended_story');
       res.status(500).json({ message: 'extデータ保存に失敗しました' });
     }
   });
+//PING
+  app.get('/', async (req, res) => {
+    try{
+      res.status(200).send('Active');
+    }catch(error){
+      console.error(error);
+    }
+  });
 //serverUp
 app.listen(port, () => console.log(`Server running on port ${port}`));
